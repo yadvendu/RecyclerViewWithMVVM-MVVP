@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Recycler View Example</string>
+    <string name="marriage_services">Marriage Services</string>
+    <string name="home_visit_specialists">Home Visit Specialists</string>
+    <string name="name_spe">Name</string>
+    <string name="sevices_by_companies">Sevices By Companies</string>
+    <string name="new_orlions_parlour">New Orlions Parlour</string>
+    <string name="unisex_salon">Unisex Salon</string>
+    <string name="_1_6_km_away">1.6 Km Away</string>
+    <string name="_4_3">4.3</string>
+</resources>
