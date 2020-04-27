@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/specialistCard"
+        android:layout_width="@dimen/specialist_image_dim"
+        android:layout_height="@dimen/specialist_image_dim"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="9dp"
+        app:cardCornerRadius="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/specialist_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <TextView
+        android:id="@+id/specialistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/name_spe"
+        android:textColor="@android:color/black"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/specialistCard"
+        app:layout_constraintStart_toStartOf="@+id/specialistCard"
+        app:layout_constraintTop_toBottomOf="@+id/specialistCard" />
+
+    <TextView
+        android:id="@+id/specialistDesignation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="Designation"
+        android:textColor="@android:color/black"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/specialistCard"
+        app:layout_constraintStart_toStartOf="@+id/specialistCard"
+        app:layout_constraintTop_toBottomOf="@+id/specialistName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
